@@ -1,6 +1,13 @@
 @import url(/sass/header.scss);
 @font-face {
   font-family: "Helvetica";
+  src: url(/fonts/HelveticaNeueBoldCondensed.ttf) format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica";
   src: url(/fonts/HelveticaNeueCyr-Roman.ttf) format("ttf");
   font-weight: 400;
   font-style: normal;
@@ -8,15 +15,15 @@
 
 @font-face {
   font-family: "Helvetica";
-  src: url(/fonts/HelveticaNeueBlackCondensed.ttf) format("ttf");
-  font-weight: 900;
+  src: url(/fonts/HelveticaNeueBoldCondensed.ttf) format("ttf");
+  font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Helvetica";
-  src: url(/fonts/HelveticaNeueBoldCondensed.ttf) format("ttf");
-  font-weight: 700;
+  src: url(/fonts/HelveticaNeueBlackCondensed.ttf) format("ttf");
+  font-weight: 900;
   font-style: normal;
 }
 
@@ -54,7 +61,8 @@ a {
 }
 
 .header__top {
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 2px solid #424242;
+  margin-bottom: 80px;
 }
 
 .header .header__section-wrapper {
@@ -90,5 +98,112 @@ a {
 
 .header .header__section-wrapper .header__section-list .header__section-link:hover {
   color: #34c759;
+}
+
+.header .hero__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 400px;
+}
+
+.header .hero__section-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.header .hero__section-title {
+  width: 100%;
+  max-width: 1000px;
+  font-size: 72px;
+  font-weight: 300;
+  line-height: 60px;
+  color: #ffffff;
+  text-transform: capitalize;
+  letter-spacing: 7px;
+  line-height: 85px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.header .hero__section-title .hero__title-span {
+  font-weight: 700;
+}
+
+.header .hero__section-desc {
+  width: 100%;
+  max-width: 595px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.2px;
+  text-align: center;
+  color: #ffffff;
+  opacity: 70%;
+  margin-bottom: 40px;
+}
+
+.header .hero__section-btn {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 1px;
+  color: #1a1a1a;
+  background-color: #34c759;
+  padding: 25px 58px;
+  border-radius: 43px;
+  -webkit-transition: color 0.1s;
+  transition: color 0.1s;
+  margin-bottom: 70px;
+}
+
+.header .hero__section-btn:hover {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  padding: 24px 57px;
+}
+
+.header .hero__section-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  max-width: 905px;
+}
+
+.header .hero__section .hero__time-icon {
+  width: 19px;
+  height: 19px;
+  margin-bottom: 16px;
+}
+
+.header .hero__section .hero__time-text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.header .hero__section .hero__time-hour {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 40px;
+  color: #ffffff;
+  opacity: 50%;
 }
 /*# sourceMappingURL=main.css.map */

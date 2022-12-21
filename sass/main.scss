@@ -2,6 +2,13 @@
 
 @font-face {
   font-family: "Helvetica";
+  src: url(/fonts/HelveticaNeueBoldCondensed.ttf) format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica";
   src: url(/fonts/HelveticaNeueCyr-Roman.ttf) format("ttf");
   font-weight: 400;
   font-style: normal;
@@ -9,15 +16,15 @@
 
 @font-face {
   font-family: "Helvetica";
-  src: url(/fonts/HelveticaNeueBlackCondensed.ttf) format("ttf");
-  font-weight: 900;
+  src: url(/fonts/HelveticaNeueBoldCondensed.ttf) format("ttf");
+  font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Helvetica";
-  src: url(/fonts/HelveticaNeueBoldCondensed.ttf) format("ttf");
-  font-weight: 700;
+  src: url(/fonts/HelveticaNeueBlackCondensed.ttf) format("ttf");
+  font-weight: 900;
   font-style: normal;
 }
 
@@ -57,7 +64,8 @@ a {
   background-repeat: no-repeat;
 
   &__top {
-    border-bottom: 2px solid $white;
+    border-bottom: 2px solid #424242;
+    margin-bottom: 80px;
   }
 
   .header__section-wrapper {
@@ -80,6 +88,99 @@ a {
         &:hover {
           color: $green;
         }
+      }
+    }
+  }
+
+  .hero__section {
+    display: flex;
+    align-items: center;
+    padding-bottom: 400px;
+
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    &-title {
+      width: 100%;
+      max-width: 1000px;
+      font-size: 72px;
+      font-weight: 300;
+      line-height: 60px;
+      color: $white;
+      text-transform: capitalize;
+      letter-spacing: 7px;
+      line-height: 85px;
+      text-align: center;
+      margin-bottom: 16px;
+
+      .hero__title-span {
+        font-weight: 700;
+      }
+    }
+
+    &-desc {
+      width: 100%;
+      max-width: 595px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 26px;
+      letter-spacing: -0.2px;
+      text-align: center;
+      color: $white;
+      opacity: 70%;
+      margin-bottom: 40px;
+    }
+
+    &-btn {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 22px;
+      letter-spacing: 1px;
+      color: #1a1a1a;
+      background-color: $green;
+      padding: 25px 58px;
+      border-radius: 43px;
+      transition: color 0.1s;
+      margin-bottom: 70px;
+
+      &:hover {
+        background-color: transparent;
+        border: 1px solid $white;
+        color: $white;
+        padding: 24px 57px;
+      }
+    }
+
+    &-info {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 905px;
+    }
+
+    .hero__time {
+      &-icon {
+        width: 19px;
+        height: 19px;
+        margin-bottom: 16px;
+      }
+
+      &-text {
+        font-size: 16px;
+        font-weight: 400;
+        color: $white;
+      }
+
+      &-hour {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 40px;
+        color: $white;
+        opacity: 50%;
       }
     }
   }
