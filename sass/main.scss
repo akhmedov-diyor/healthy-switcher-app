@@ -1,2 +1,87 @@
 @import url(/sass/header.scss);
 
+@font-face {
+  font-family: "Helvetica";
+  src: url(/fonts/HelveticaNeueCyr-Roman.ttf) format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url(/fonts/HelveticaNeueBlackCondensed.ttf) format("ttf");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url(/fonts/HelveticaNeueBoldCondensed.ttf) format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+$green: #34c759;
+$white: #ffffff;
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica";
+  font-weight: 400;
+}
+
+.container {
+  width: 100%;
+  max-width: 1330px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+// !HEADER STYLE STARTED
+.header {
+  background-image: url(/img/header-img/header-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__top {
+    border-bottom: 2px solid $white;
+  }
+
+  .header__section-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header__section-list {
+      display: flex;
+      justify-content: space-between;
+      width: 300px;
+
+      .header__section-link {
+        font-weight: 700;
+        color: $white;
+        font-size: 14px;
+        line-height: 90px;
+        transition: 0.1s;
+
+        &:hover {
+          color: $green;
+        }
+      }
+    }
+  }
+}
+// !HEADER STYLE FINISHED
