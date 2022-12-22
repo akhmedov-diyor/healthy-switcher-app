@@ -258,7 +258,7 @@ a {
 
 .work__section-wrapper {
   text-align: center;
-  margin-bottom: 120px;
+  margin-bottom: 90px;
   background-image: url(/img/work-img/work-bg.png);
   background-repeat: no-repeat;
   background-position: center calc(50% - 135px);
@@ -357,5 +357,112 @@ a {
   line-height: 18px;
   letter-spacing: -0.162px;
   color: #ffffff80;
+}
+
+.dishes__section-wrapper {
+  text-align: center;
+  background-image: url(/img/dishes-img/dishes-bg.png);
+  background-repeat: no-repeat;
+  background-position: center calc(50% - 580px);
+}
+
+.dishes__section-title {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 90px;
+  letter-spacing: 0.2em;
+  color: #d9d9d9;
+  margin-bottom: 90px;
+}
+
+.dishes__section-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.dishes__section-card {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 6px;
+  background-color: #252525;
+  text-align: left;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.dishes__section .dishes__card-text {
+  padding: 30px;
+}
+
+.dishes__section .dishes__card-text .dishes__card-title {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #d9d9d9;
+}
+
+.dishes__section .dishes__card-text .dishes__card-subtitle {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.15px;
+  color: #a4a8b2;
+  margin-bottom: 20px;
+}
+
+.dishes__section .dishes__card-text .dishes__card-desc {
+  width: 100%;
+  max-width: 290px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.16px;
+  color: #85878c;
+  margin-bottom: 20px;
+}
+
+.dishes__section .dishes__card-text .dishes__card-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dishes__section .dishes__card-text .dishes__card-content .dishes__card-star {
+  margin-right: 11px;
+  cursor: pointer;
+}
+
+.dishes__section .dishes__card-text .dishes__card-content .dishes__card-amount {
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 30px;
+  letter-spacing: 1.5px;
+  color: #b3b3b3;
+  margin-right: 43px;
+}
+
+.dishes__section .dishes__card-text .dishes__card-content .dishes__card-btn {
+  font-size: 10px;
+  font-weight: 900;
+  line-height: 40px;
+  letter-spacing: 0.2em;
+  color: #ffffff80;
+  border: 2px solid #303030;
+  padding: 0 32px;
+  border-radius: 30px;
+}
+
+.dishes__section .dishes__card-text .dishes__card-content .dishes__card-btn:hover {
+  color: #252525;
+  background-color: #34c759;
 }
 /*# sourceMappingURL=main.css.map */

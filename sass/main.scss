@@ -238,7 +238,7 @@ a {
 .work__section {
   &-wrapper {
     text-align: center;
-    margin-bottom: 120px;
+    margin-bottom: 90px;
     background-image: url(/img/work-img/work-bg.png);
     background-repeat: no-repeat;
     background-position: center calc(50% - 135px);
@@ -332,6 +332,109 @@ a {
 // *WORK STYLE FINISHED
 
 // *DISHES STYLE STARTED
+.dishes__section {
+  &-wrapper {
+    text-align: center;
+    background-image: url(/img/dishes-img/dishes-bg.png);
+    background-repeat: no-repeat;
+    background-position: center calc(50% - 580px);
+  }
+
+  &-title {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 90px;
+    letter-spacing: 0.2em;
+    color: #d9d9d9;
+    margin-bottom: 90px;
+  }
+
+  &-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &-card {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 6px;
+    background-color: #252525;
+    text-align: left;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+
+  .dishes__card-text {
+    padding: 30px;
+
+    .dishes__card {
+      &-title {
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 30px;
+        color: #d9d9d9;
+      }
+
+      &-subtitle {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: -0.15px;
+        color: #a4a8b2;
+        margin-bottom: 20px;
+      }
+
+      &-desc {
+        width: 100%;
+        max-width: 290px;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: -0.16px;
+        color: #85878c;
+        margin-bottom: 20px;
+      }
+
+      &-content {
+        display: flex;
+        align-items: center;
+
+        .dishes__card {
+          &-star {
+            margin-right: 11px;
+            cursor: pointer;
+          }
+
+          &-amount {
+            font-size: 12px;
+            font-weight: 900;
+            line-height: 30px;
+            letter-spacing: 1.5px;
+            color: #b3b3b3;
+            margin-right: 43px;
+          }
+
+          &-btn {
+            font-size: 10px;
+            font-weight: 900;
+            line-height: 40px;
+            letter-spacing: 0.2em;
+            color: #ffffff80;
+            border: 2px solid #303030;
+            padding: 0 32px;
+            border-radius: 30px;
+
+            &:hover {
+              color: #252525;
+              background-color: $green;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 // *DISHES STYLE FINISHED
 
 // *CHEFS STYLE STARTED
