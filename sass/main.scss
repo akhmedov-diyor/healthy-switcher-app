@@ -44,7 +44,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1330px;
+  max-width: 1150px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -204,7 +204,7 @@ a {
     background-image: url(/img/about-img/about-bg.png);
     background-repeat: no-repeat;
     background-position: calc(50% - 1px) calc(50% - 235px);
-    margin-top: -13rem;
+    margin-top: -12.5rem;
     margin-bottom: 90px;
     padding-bottom: 90px;
   }
@@ -227,10 +227,108 @@ a {
     color: #a6a6a6;
     margin-bottom: 90px;
   }
+
+  .about__box-img:nth-child(1) {
+    margin-right: 34px;
+  }
 }
 // *ABOUT STYLE FINISHED
 
 // *WORK STYLE STARTED
+.work__section {
+  &-wrapper {
+    text-align: center;
+    margin-bottom: 120px;
+    background-image: url(/img/work-img/work-bg.png);
+    background-repeat: no-repeat;
+    background-position: center calc(50% - 135px);
+  }
+
+  &-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 90px;
+    letter-spacing: 0.2em;
+    text-transform: capitalize;
+    color: #d9d9d9;
+    margin-bottom: 60px;
+
+    &::after {
+      display: block;
+      content: "";
+      width: 60px;
+      height: 2px;
+      background-color: $green;
+      margin-top: 28px;
+    }
+  }
+
+  &-box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1110px;
+  }
+
+  &-card {
+    background-color: #252525;
+    box-shadow: 0px 2px 5px 0px #0000001a;
+    text-align: left;
+    padding: 24px;
+    border-radius: 6px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $green;
+
+      .work__card-title {
+        color: #191919;
+
+        &::after {
+          background-color: #191919;
+        }
+      }
+
+      .work__card-desc {
+        color: #191919;
+      }
+    }
+
+    .work__card {
+      &-title {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: -0.275px;
+        color: $white;
+        text-transform: capitalize;
+
+        &::after {
+          display: block;
+          content: "";
+          width: 56px;
+          height: 2px;
+          background-color: $green;
+          margin-top: 15px;
+          margin-bottom: 24px;
+        }
+      }
+
+      &-desc {
+        width: 100%;
+        max-width: 200px;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: -0.162px;
+        color: #ffffff80;
+      }
+    }
+  }
+}
 // *WORK STYLE FINISHED
 
 // *DISHES STYLE STARTED
