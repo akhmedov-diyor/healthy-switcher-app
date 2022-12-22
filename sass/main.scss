@@ -338,6 +338,7 @@ a {
     background-image: url(/img/dishes-img/dishes-bg.png);
     background-repeat: no-repeat;
     background-position: center calc(50% - 580px);
+    margin-bottom: 120px;
   }
 
   &-title {
@@ -438,6 +439,83 @@ a {
 // *DISHES STYLE FINISHED
 
 // *CHEFS STYLE STARTED
+.chefs__section {
+  &-wrapper {
+    text-align: center;
+    background-image: url(/img/chefs-img/shefs-bg.png);
+    background-repeat: no-repeat;
+    background-position: center calc(50% - 105px);
+    margin-bottom: 120px;
+  }
+
+  &-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 90px;
+    letter-spacing: 0.2em;
+    color: #d9d9d9;
+
+    &::after {
+      display: block;
+      content: "";
+      width: 60px;
+      height: 2px;
+      background-color: $green;
+      margin-top: 28px;
+      margin-bottom: 38px;
+    }
+  }
+
+  &-box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1110px;
+
+    .chefs__section-card {
+      text-align: left;
+    }
+
+    .chefs__card {
+      &-account {
+        display: flex;
+        align-items: center;
+        margin-bottom: 24px;
+      }
+
+      &-avatar {
+        margin-right: 24px;
+        border-radius: 50%;
+      }
+
+      &-name {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: -0.23px;
+        color: $white;
+        margin-bottom: 6px;
+      }
+
+      &-profession {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: -0.15px;
+        color: #ffffff80;
+      }
+
+      &-box {
+        display: flex;
+        justify-content: space-between;
+        width: 350px;
+      }
+    }
+  }
+}
 // *CHEFS STYLE FINISHED
 
 // *RECIPES STYLE STARTED

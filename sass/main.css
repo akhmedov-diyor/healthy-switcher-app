@@ -364,6 +364,7 @@ a {
   background-image: url(/img/dishes-img/dishes-bg.png);
   background-repeat: no-repeat;
   background-position: center calc(50% - 580px);
+  margin-bottom: 120px;
 }
 
 .dishes__section-title {
@@ -464,5 +465,98 @@ a {
 .dishes__section .dishes__card-text .dishes__card-content .dishes__card-btn:hover {
   color: #252525;
   background-color: #34c759;
+}
+
+.chefs__section-wrapper {
+  text-align: center;
+  background-image: url(/img/chefs-img/shefs-bg.png);
+  background-repeat: no-repeat;
+  background-position: center calc(50% - 105px);
+  margin-bottom: 120px;
+}
+
+.chefs__section-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 90px;
+  letter-spacing: 0.2em;
+  color: #d9d9d9;
+}
+
+.chefs__section-title::after {
+  display: block;
+  content: "";
+  width: 60px;
+  height: 2px;
+  background-color: #34c759;
+  margin-top: 28px;
+  margin-bottom: 38px;
+}
+
+.chefs__section-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  max-width: 1110px;
+}
+
+.chefs__section-box .chefs__section-card {
+  text-align: left;
+}
+
+.chefs__section-box .chefs__card-account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 24px;
+}
+
+.chefs__section-box .chefs__card-avatar {
+  margin-right: 24px;
+  border-radius: 50%;
+}
+
+.chefs__section-box .chefs__card-name {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.23px;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.chefs__section-box .chefs__card-profession {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.15px;
+  color: #ffffff80;
+}
+
+.chefs__section-box .chefs__card-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 350px;
 }
 /*# sourceMappingURL=main.css.map */
