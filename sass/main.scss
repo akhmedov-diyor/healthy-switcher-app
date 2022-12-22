@@ -39,6 +39,7 @@ $white: #ffffff;
 body {
   font-family: "Helvetica";
   font-weight: 400;
+  background-color: #191919;
 }
 
 .container {
@@ -186,3 +187,62 @@ a {
   }
 }
 // !HEADER STYLE FINISHED
+
+// MAIN STYLE STARTED
+
+// *ABOUT STYLE STARTED
+.about__section {
+  &-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #252525;
+    border-radius: 6px;
+    box-shadow: 0px 2px 5px 0px #0000001a;
+    background-image: url(/img/about-img/about-bg.png);
+    background-repeat: no-repeat;
+    background-position: calc(50% - 1px) calc(50% - 235px);
+    margin-top: -13rem;
+    margin-bottom: 90px;
+    padding-bottom: 90px;
+  }
+
+  &-title {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: 0.2em;
+    color: #d9d9d9;
+    margin-bottom: 60px;
+    padding-top: 105px;
+  }
+
+  &-desc {
+    width: 734px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #a6a6a6;
+    margin-bottom: 90px;
+  }
+}
+// *ABOUT STYLE FINISHED
+
+// *WORK STYLE STARTED
+// *WORK STYLE FINISHED
+
+// *DISHES STYLE STARTED
+// *DISHES STYLE FINISHED
+
+// *CHEFS STYLE STARTED
+// *CHEFS STYLE FINISHED
+
+// *RECIPES STYLE STARTED
+// *RECIPES STYLE FINISHED
+
+// *SOCIAL STYLE STARTED
+// *SOCIAL STYLE FINISHED
+
+// MAIN STYLE FINISHED
