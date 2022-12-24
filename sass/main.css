@@ -564,6 +564,7 @@ a {
   background-image: url(/img/recipes-img/recipes-bg.png);
   background-repeat: no-repeat;
   background-position: center calc(50% - 310px);
+  margin-bottom: 90px;
 }
 
 .recipes__section-wrapper {
@@ -636,6 +637,10 @@ a {
   padding: 2px 16px;
   border-radius: 4px;
   margin-bottom: 65px;
+}
+
+.recipes__section-start .recipes__start-btn:hover {
+  background-color: #000;
 }
 
 .recipes__section-start .recipes__start-data {
@@ -713,6 +718,11 @@ a {
   border-radius: 6px;
   margin-bottom: 30px;
   padding: 30px 30px 25px 30px;
+  cursor: pointer;
+}
+
+.recipes__section-end .recipes__end-card:nth-child(2) {
+  background-image: url(/img/recipes-img/recipes-card-bg.jpg);
 }
 
 .recipes__section-end .recipes__end-card .recipes__card-desc {
@@ -747,9 +757,13 @@ a {
   letter-spacing: 1.25px;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: #00000076;
+  background-color: #0000005c;
   margin-right: 15px;
   padding: 0 8px;
+}
+
+.recipes__section-end .recipes__end-card .recipes__footer-start .recipes__footer-btn:hover {
+  background-color: #000;
 }
 
 .recipes__section-end .recipes__end-card .recipes__footer-start .recipes__footer-data {
@@ -796,5 +810,155 @@ a {
   font-size: 12px;
   font-weight: 700;
   color: #ffffff;
+}
+
+.social__section .social__section-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 90px;
+  letter-spacing: 0.2em;
+  color: #d9d9d9;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.social__section .social__section-title::after {
+  display: inline-block;
+  content: "";
+  width: 60px;
+  height: 2px;
+  background-color: #34c759;
+  margin-top: 28px;
+}
+
+.social__section .social__section-wrapper {
+  background-image: url(/img/social-img/social-title-bg.png);
+  background-repeat: no-repeat;
+  background-position: center calc(50% - 210px);
+  margin-bottom: 120px;
+}
+
+.social__section .social__section-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.social__section .social__section-card {
+  background-color: #252525;
+  border-radius: 6px;
+}
+
+.social__section .social__section-card:nth-child(2) .social__card-content {
+  padding: 0;
+}
+
+.social__section .social__section-card:nth-child(2) .social__card-content img {
+  border-bottom-left-radius: 6px;
+}
+
+.social__section .social__section-card .social__card-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px;
+  border-bottom: 2px solid #303030;
+}
+
+.social__section .social__section-card .social__card-top .social__top-start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social__section .social__section-card .social__card-top .social__top-start i {
+  font-size: 24px;
+  color: #737373;
+  border: 2px solid #303030;
+  border-radius: 50%;
+  margin-right: 20px;
+  padding: 7.87px;
+  cursor: pointer;
+}
+
+.social__section .social__section-card .social__card-top .social__top-start i:hover {
+  color: #34c759;
+  border: 2px solid #34c759;
+}
+
+.social__section .social__section-card .social__card-top .social__top-start .social__start-name {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #bfbfbf;
+}
+
+.social__section .social__section-card .social__card-top .social__top-btn {
+  font-size: 10px;
+  font-weight: 900;
+  line-height: 40px;
+  letter-spacing: 0.2em;
+  color: #737373;
+  padding: 18px;
+  text-transform: uppercase;
+  padding: 0 18px;
+  border: 2px solid #303030;
+  border-radius: 30px;
+}
+
+.social__section .social__section-card .social__card-top .social__top-btn:hover {
+  color: #252525;
+  background-color: #34c759;
+}
+
+.social__section .social__section-card .social__card-content {
+  padding: 20px 40px 20px 30px;
+}
+
+.social__section .social__section-card .social__card-content .social__card-data {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #737373;
+  margin-bottom: 10px;
+}
+
+.social__section .social__section-card .social__card-content .social__card-desc {
+  width: 100%;
+  max-width: 280px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #ffffffb2;
+  margin-bottom: 10px;
+}
+
+.social__section .social__section-card .social__card-content .social__card-user {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #34c759;
 }
 /*# sourceMappingURL=main.css.map */
