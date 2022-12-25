@@ -31,6 +31,10 @@
 $green: #34c759;
 $white: #ffffff;
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -866,3 +870,76 @@ a {
 // *SOCIAL STYLE FINISHED
 
 // MAIN STYLE FINISHED
+
+// ? FOOTER SECTION STARTED
+
+.footer__section {
+  background-color: #252525;
+  box-shadow: 0px 2px 5px 0px #0000001a;
+  padding-top: 30px;
+
+  &-top {
+    padding-bottom: 30px;
+    border-bottom: 2px solid #303030;
+  }
+
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+  }
+
+  &-logo {
+    width: 207px;
+    height: 24px;
+    margin-bottom: 10px;
+  }
+
+  &-company {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #737373;
+  }
+  .footer__top {
+    &-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &-list {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 900px;
+    }
+
+    &-item {
+      text-align: center;
+    }
+
+    &-img {
+      width: 26px;
+      height: 26px;
+      margin-bottom: 13px;
+    }
+
+    &-data {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 30px;
+      color: $white;
+    }
+
+    &-hours {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 30px;
+      color: $white;
+      opacity: 50%;
+    }
+  }
+}
+
+// ? FOOTER SECTION FINISHED
